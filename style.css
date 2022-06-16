@@ -1,6 +1,68 @@
-body {
-    background:salmon;
+*{
+    margin:0;
+    padding: 0;
+    font-family: Papyrus, cursive;
 }
-h2 {
-    color:deepskyblue
+body {
+   min-height:100vh;
+   background: linear-gradient(120deg, deeppink 0%, deeppink 50%, deepskyblue 50%);
+}
+
+nav,footer{
+    background:white;
+    min-height: 10vh;
+    opacity: 0.5;
+    text-align: right;
+   overflow: auto;
+   border:1px solid green;
+}
+
+footer{
+    text-align: center;
+}
+a {
+    /* margin:50px; */
+    padding:20px;
+    font-size:40px;
+    display:inline-block;
+    /* height:100px; */
+}
+main {
+    text-align: center;
+}
+img {
+    width:500px;
+    margin:0 auto;
+    animation: spin 10s ease;
+}
+
+aside {
+    text-align: center;
+}
+
+form{
+    width:50%;
+    margin:0 auto;
+    border:5px solid white;
+    border-radius:15px;
+}
+button {
+    width:20%;
+    background:brown;
+    border-radius:none;
+    font-size:24px;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        border-radius: 100%;
+        filter: invert();
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
